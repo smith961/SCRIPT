@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function output(string){
+            let series=[];
+            for(i=1; i<=string; i++){
+                if(i%2=== 0 && i%3 === 0 && i%5 === 0){
+                    series.push("yu-gi-oh");
+                }
+                else if(i%2=== 0 && i%3 === 0){
+                    series.push("yu-gi");
+                }
+                else if(i%2 === 0 && i%5 === 0){
+                    series.push("yu-oh");
+                }
+                else if(i%3 === 0 && i%5 === 0){
+                    series.push("gi-oh");
+                }
+                else if(i%2 === 0 ){
+                    series.push("yu");
+                }
+                else if(i%3 === 0){
+                    series.push("gi");
+                }
+                else if(i%5 === 0){
+                    series.push("oh");
+                }
+                else{
+                    series.push(i)
+                }
+            }
+            console.log(series);
+            return series;
+        }
+        output(10);
+    </script>
+    
+</body>
+</html>
